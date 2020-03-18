@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
@@ -10,179 +10,178 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
     <!-- main CSS -->
     <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
+  </head>
 
+  <body>
     <div id="app">
-        <!-- Main content -->
-        <main id="main-window">
-            <!-- Sidebar -->
-            <aside id="sidebar">
-                <!-- Sidebar-top -->
-                <div class="sidebar-top">
-                  <img src="img/logo.svg" alt="Spotify Logo">
-                  <nav>
-                    <ul>
-                      <li>
-                        <a href="#"><img src="img/home.svg" alt="Home">Home</a>
-                      </li>
-                      <li>
-                        <a href="#"><img src="img/search.svg" alt="Search">Cerca</a>
-                      </li>
-                      <li>
-                        <a href="#"><img src="img/libreria.svg" alt="Libreria">La tua Libreria</a>
-                      </li>
-                    </ul>
-                    <h4>Playlist</h4>
-                    <ul>
-                      <li>
-                        <a href="#"><i class="fas fa-plus-square"></i>Crea Playlist</a>
-                      </li>
-                      <li>
-                        <a href="#">Nome Playlist</a>
-                      </li>
-                      <li>
-                        <a href="#">Nome Playlist</a>
-                      </li>
-                      <li>
-                        <a href="#">Nome Playlist</a>
-                      </li>
-                      <li>
-                        <a href="#">Nome Playlist</a>
-                      </li>
-                      <li>
-                        <a href="#">Nome Playlist</a>
-                      </li>
-                      <li>
-                        <a href="#">Nome Playlist</a>
-                      </li>
-                      <li>
-                        <a href="#">Nome Playlist</a>
-                      </li>
-                    </ul>
-                  </nav><!-- ./nav -->
-                </div><!-- ./Sidebar-top-->
+      <!-- Main content -->
+      <main id="main-window">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+          <!-- Sidebar-top -->
+          <div class="sidebar-top">
+            <img src="img/logo.svg" alt="Spotify Logo">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#"><img src="img/home.svg" alt="Home">Home</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/search.svg" alt="Search">Cerca</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/libreria.svg" alt="Libreria">La tua Libreria</a>
+                </li>
+              </ul>
+              <h4>Playlist</h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-plus-square"></i>Crea Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+              </ul>
+            </nav><!-- ./nav -->
+          </div><!-- ./Sidebar-top-->
 
-                <!-- Sidebar-bottom -->
-                <div class="sidebar-bottom">
-                  <div class="border">
-                    <a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a>
-                  </div>
-                  <a href="#"><img src="img/profile.svg" alt="profile"> John Doe</a>
-                </div><!-- ./sidebar-bottom -->
-            </aside><!-- ./Sidebar -->
+          <!-- Sidebar-bottom -->
+          <div class="sidebar-bottom">
+            <div class="border">
+              <a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a>
+            </div>
+            <a href="#"><img src="img/profile.svg" alt="profile"> John Doe</a>
+          </div><!-- ./sidebar-bottom -->
+        </aside><!-- ./Sidebar -->
 
-            <!-- Content -->
-            <div id="content">
-                <!-- content-top-bar -->
-                <div class="content-top-bar">
-                  <a href="#">Effettua l'Upgrade</a>
+        <!-- Content -->
+        <div id="content">
+          <!-- content-top-bar -->
+          <div class="content-top-bar">
+            <a href="#">Effettua l'Upgrade</a>
+          </div>
+
+          <!-- scrollable -->
+          <div class="scrollable">
+            <!-- Content-menu -->
+            <nav class="content-menu">
+              <ul>
+                <li>
+                  <a href="#">In Evideza</a>
+                </li>
+                <li>
+                  <a href="#">Podcast</a>
+                </li>
+                <li>
+                  <a href="#">Classifiche</a>
+                </li>
+                <li>
+                  <a href="#">Generi e Mood</a>
+                </li>
+                <li>
+                  <a href="#">Nuove Uscite</a>
+                </li>
+                <li>
+                  <a href="#">Scopri</a>
+                </li>
+              </ul>
+            </nav><!-- ./Content-menu -->
+
+            <!-- recently-Played -->
+            <section class="content-category">
+              <h2>Recently played</h2>
+              <div class="album-container">
+                <!-- album -->
+                <div class="album">
+                  <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                  <h5>Heavy Metal</h5>
+                  <h6>Subtitle</h6>
                 </div>
+                <div class="album">
+                  <img src="img/stranger.jpeg" alt="Stranger Things">
+                  <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h5>
+                  <h6>Kyle Dixon &amp; Michael Stein</h6>
+                </div>
+                <div class="album">
+                  <img src="img/aquietplace.jpeg" alt="A Quiet Place">
+                  <h5>A quiet place</h5>
+                  <h6>Subtitle</h6>
+                </div>
+                <div class="album">
+                  <img src="img/split.jpeg" alt="Split">
+                  <h5>Split</h5>
+                  <h6>Subtitle</h6>
+                </div>
+                <div class="album">
+                  <img src="img/cure.jpeg" alt="Cure">
+                  <h5>A cure for Wellness</h5>
+                  <h6>Subtitle</h6>
+                </div>
+                <div class="album">
+                  <img src="img/sinister.jpeg" alt="Sinister">
+                  <h5>Sinister</h5>
+                  <h6>Subtitle</h6>
+                </div>
+              </div><!-- ./Album-Container -->
+            </section><!-- ./recently-Played -->
 
-                <!-- scrollable -->
-                <div class="scrollable">
-                    <!-- Content-menu -->
-                    <nav class="content-menu">
-                      <ul>
-                        <li>
-                          <a href="#">In Evideza</a>
-                        </li>
-                        <li>
-                          <a href="#">Podcast</a>
-                        </li>
-                        <li>
-                          <a href="#">Classifiche</a>
-                        </li>
-                        <li>
-                          <a href="#">Generi e Mood</a>
-                        </li>
-                        <li>
-                          <a href="#">Nuove Uscite</a>
-                        </li>
-                        <li>
-                          <a href="#">Scopri</a>
-                        </li>
-                      </ul>
-                    </nav><!-- ./Content-menu -->
+            <!-- Create for John Doe -->
+            <section class="content-category">
+              <h2>Creato per John Doe</h2>
+              <h6>Più Ascolti, Più accurati saranno i suggerimenti</h6>
+              <div class="album-container">
+                <!-- album -->
+                <div class="album">
+                  <img src="img/radar.jpeg" alt="Radar">
+                  <h5>Release Radar</h5>
+                </div>
+                <div class="album">
+                  <img src="img/mixdaily.jpeg" alt="daily Mix">
+                  <h5>Daily Mix 1</h5>
+                </div>
+              </div><!-- ./Album-Container -->
+            </section><!-- ./Create for John Doe -->
 
-                    <!-- recently-Played -->
-                    <section class="content-category">
-                        <h2>Recently played</h2>
-                        <div class="album-container">
-                          <!-- album -->
-                          <div class="album">
-                            <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                            <h5>Heavy Metal</h5>
-                            <h6>Subtitle</h6>
-                          </div>
-                          <div class="album">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
-                            <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h5>
-                            <h6>Kyle Dixon &amp; Michael Stein</h6>
-                          </div>
-                          <div class="album">
-                            <img src="img/aquietplace.jpeg" alt="A Quiet Place">
-                            <h5>A quiet place</h5>
-                            <h6>Subtitle</h6>
-                          </div>
-                          <div class="album">
-                            <img src="img/split.jpeg" alt="Split">
-                            <h5>Split</h5>
-                            <h6>Subtitle</h6>
-                          </div>
-                          <div class="album">
-                            <img src="img/cure.jpeg" alt="Cure">
-                            <h5>A cure for Wellness</h5>
-                            <h6>Subtitle</h6>
-                          </div>
-                          <div class="album">
-                            <img src="img/sinister.jpeg" alt="Sinister">
-                            <h5>Sinister</h5>
-                            <h6>Subtitle</h6>
-                          </div>
-                        </div><!-- ./Album-Container -->
-                    </section><!-- ./recently-Played -->
+            <!-- Popular Artist -->
+            <section class="content-category">
+              <h2>Artisti più popolari</h2>
+              <h6>Più Ascolti, Più accurati saranno i suggerimenti</h6>
+              <div class="album-container">
+                <!-- album -->
+                <div class="album">
+                  <img src="img/young.jpeg" alt="Young">
+                  <h5>Lana del Rey</h5>
+                </div>
+                <div class="album">
+                  <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                  <h5>Daily Mix 1</h5>
+                </div>
+              </div><!-- ./Album-Container -->
+            </section><!-- ./Popular Artist -->
+          </div><!-- ./Scrollable -->
+        </div><!-- ./Content -->
+      </main><!-- ./Main content -->
 
-                    <!-- Create for John Doe -->
-                    <section class="content-category">
-                        <h2>Creato per John Doe</h2>
-                        <h6>Più Ascolti, Più accurati saranno i suggerimenti</h6>
-                        <div class="album-container">
-                          <!-- album -->
-                          <div class="album">
-                            <img src="img/radar.jpeg" alt="Radar">
-                            <h5>Release Radar</h5>
-                          </div>
-                          <div class="album">
-                            <img src="img/mixdaily.jpeg" alt="daily Mix">
-                            <h5>Daily Mix 1</h5>
-                          </div>
-                        </div><!-- ./Album-Container -->
-                    </section><!-- ./Create for John Doe -->
-
-                    <!-- Popular Artist -->
-                    <section class="content-category">
-                        <h2>Artisti più popolari</h2>
-                        <h6>Più Ascolti, Più accurati saranno i suggerimenti</h6>
-                        <div class="album-container">
-                          <!-- album -->
-                          <div class="album">
-                            <img src="img/young.jpeg" alt="Young">
-                            <h5>Lana del Rey</h5>
-                          </div>
-                          <div class="album">
-                            <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
-                            <h5>Daily Mix 1</h5>
-                          </div>
-                        </div><!-- ./Album-Container -->
-                    </section><!-- ./Popular Artist -->
-                </div><!-- ./Scrollable -->
-            </div><!-- ./Content -->
-        </main><!-- ./Main content -->
-
-        <!-- Bottom Player -->
-        <footer id="player">Player</footer>
-    </div>
-
-</body>
+      <!-- Bottom Player -->
+      <footer id="player">Player</footer>
+    </div><!-- ./app -->
+  </body>
 </html>

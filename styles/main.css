@@ -44,12 +44,13 @@ body {
 .sidebar-top {
     flex-grow: 1;
     background: #000;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .sidebar-top > img {
   width: 130px;
   margin-bottom: 30px;
+  padding-left: 20px;
 }
 
 .sidebar-top ul {
@@ -61,10 +62,17 @@ body {
 .sidebar-top h4 {
   margin: 20px 0;
   text-transform: uppercase;
+  padding-left: 20px;
 }
 
 .sidebar-top ul li {
   margin-bottom: 10px;
+  padding-left: 20px;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-top ul li:hover {
+  border-left: 3px solid #1ed760;
 }
 
 .sidebar-top ul li i {
@@ -100,7 +108,7 @@ body {
 .sidebar-bottom > a {
   color: #fff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .sidebar-bottom img {
@@ -145,10 +153,11 @@ body {
   padding: 10px 30px;
   border: 1px solid #fff;
   border-radius: 30px;
+  font-weight: 600;
 }
 
 .content-top-bar a:hover {
-  background-color: #acfe2e;
+  background-color: #1ed760;
 }
 
 #content .scrollable {

@@ -203,8 +203,43 @@ body {
   color: #fff;
 }
 
+/* content-Category */
+
 .content-category {
-    height: 200px; /* Debug */
+  margin-bottom: 20px;
+}
+
+.content-category h2 {
+  margin-bottom: 10px;
+}
+
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album-container .album {
+  flex-basis: calc(100% / 6);
+  text-align: center;
+  padding: 10px 10px 10px 0;
+  margin-top: 10px;
+}
+
+.album-container .album img {
+  max-width: 100%;
+}
+
+.album-container .album h5 {
+  margin: 15px 0 10px;
+}
+
+.album-container .album h6,
+.content-category > h6 {
+  color: #747474;
+}
+
+.content-category:nth-last-child(1) .album-container img {
+  border-radius: 50%;
 }
 
 

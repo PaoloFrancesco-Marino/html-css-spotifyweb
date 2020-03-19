@@ -18,7 +18,7 @@ body {
 
 .sidebar-top ul,
 .content-menu ul,
-.info-player ul {
+.player-button ul {
   list-style: none;
 }
 
@@ -26,6 +26,11 @@ body {
 .sidebar-top ul li a:hover,
 .sidebar-bottom a:hover {
   color: #fff;
+}
+
+.player-button ul li a:hover,
+.info-player a:hover {
+  color: #1ed760;
 }
 
 
@@ -283,6 +288,8 @@ body {
     align-items: center;
 }
 
+/* info-player */
+
 #player img {
   max-width: 40px;
   display: block;
@@ -302,4 +309,34 @@ body {
   margin-right: 10px;
   color: #fff;
 }
+
+/* player-button */
+
+.player-button {
+  display: flex;
+}
+.player-button ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.player-button ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.player-button ul li:nth-child(3) a {
+  font-size: 30px;
+}
+
+.player-button ul li:nth-child(2) {
+  margin-right: 25px;
+}
+
+.player-button ul li:nth-child(4) {
+  margin-left: 10px;
+}
+
+
 

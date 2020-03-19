@@ -291,7 +291,7 @@ body {
 /* info-player */
 
 #player img {
-  max-width: 60px;
+  max-width: 40px;
   display: block;
   margin-right: 10px;
 }
@@ -313,9 +313,8 @@ body {
 /* player-button */
 
 .player-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  flex-basis: 600px;
 }
 
 .player-button ul li {
@@ -341,40 +340,60 @@ body {
   margin-left: 10px;
 }
 
-
-
+/* progress-bar */
 .progress-bar {
   margin-top: 10px;
   display: flex;
   align-items: center;
 }
 
-
 .progress-bar span {
   font-size: 12px;
 }
 
-.box {
+.bar {
   position: relative;
-  background-color: #ccc;
+  background-color: #535353;
   height: 4px;
-  width: 600px;
+  flex-grow: 1;
   border-radius: 10px;
   margin: 0 10px;
 }
 
-.box::before {
+.bar::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 25%;
-  background-color: green;
+  background-color: #bababa;
 }
 
-.box::after {
+.progress-bar:hover .bar::after {
   content: '';
   position: absolute;
-  right: -40px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #1ed760;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* volume-bar */
+.volume-bar {
+  display: flex;
+  flex-basis: 250px;
+  align-items: center;
+}
+
+.volume-bar a i {
+  color: #fff;
+  margin-right: 15px;
+}
+
+/* Reponsive */
+

@@ -109,9 +109,9 @@ body {
   position: absolute;
   content: '';
   height: 100%;
-  width: 2px;
+  width: 5px;
   background: #1ed760;
-  left: -18px;
+  left: -20px;
   transform: translateX(-50%);
 }
 
@@ -189,13 +189,14 @@ body {
 
 .content-menu {
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .content-menu ul li {
   display: inline-block;
   position: relative;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -306,7 +307,6 @@ body {
 .info-player {
   display: flex;
   align-items: center;
-  flex-basis: 25%;
 }
 
 .info-player .text {
@@ -327,7 +327,7 @@ body {
 .player-button {
   text-align: center;
   flex-basis: 50%;
-  margin: 0 50px;
+  padding: 0 20px;
 }
 
 .player-button ul li {
@@ -399,7 +399,7 @@ body {
 /* volume-bar */
 .volume-bar {
   display: flex;
-  flex-basis: 25%;
+  flex-basis: 200px;
   align-items: center;
 }
 
@@ -440,5 +440,9 @@ body {
 
   .icon-info-player {
     flex-direction: column;
+  }
+
+  .sidebar-bottom .border > a i {
+    font-size: 25px;
   }
 }

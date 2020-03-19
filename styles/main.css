@@ -291,7 +291,7 @@ body {
 /* info-player */
 
 #player img {
-  max-width: 40px;
+  max-width: 60px;
   display: block;
   margin-right: 10px;
 }
@@ -314,7 +314,10 @@ body {
 
 .player-button {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .player-button ul li {
   display: inline-block;
   vertical-align: middle;
@@ -340,3 +343,38 @@ body {
 
 
 
+.progress-bar {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+.progress-bar span {
+  font-size: 12px;
+}
+
+.box {
+  position: relative;
+  background-color: #ccc;
+  height: 4px;
+  width: 600px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 25%;
+  background-color: green;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+}

@@ -12,6 +12,10 @@ body {
 
 
 /* utilities */
+.pos-relative {
+  position: relative;
+}
+
 .sidebar-top ul,
 .content-menu ul {
   list-style: none;
@@ -196,7 +200,7 @@ body {
   background: #1ed760;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, 200%);
 }
 
 .content-menu ul li a:hover {
@@ -211,6 +215,7 @@ body {
 
 .content-category h2 {
   margin-bottom: 10px;
+  padding-left: 10px;
 }
 
 .album-container {
@@ -221,12 +226,13 @@ body {
 .album-container .album {
   flex-basis: calc(100% / 6);
   text-align: center;
-  padding: 10px 10px 10px 0;
+  padding: 10px;
   margin-top: 10px;
 }
 
 .album-container .album img {
   max-width: 100%;
+  display: block;
 }
 
 .album-container .album h5 {
@@ -236,6 +242,35 @@ body {
 .album-container .album h6,
 .content-category > h6 {
   color: #747474;
+  padding-left: 10px;
+}
+
+.layover {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.layover i {
+  color: #fff;
+  font-size: 40px;
+  display: none;
+}
+
+.overlay:hover .layover {
+  background: rgba(0,0,0, .5);
+}
+
+.overlay:hover .layover i {
+  display: block;
+}
+
+
+.content-category:nth-last-child(1) .album-container .overlay:hover .layover {
+  border-radius: 50%;
 }
 
 .content-category:nth-last-child(1) .album-container img {

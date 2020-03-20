@@ -212,7 +212,7 @@ body {
   content: '';
   height: 4px;
   width: 40%;
-  background: #1ed760;
+  background: linear-gradient(#438600, #8fd747);
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 200%);

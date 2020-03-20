@@ -29,7 +29,8 @@ body {
 }
 
 .player-button ul li a:hover,
-.info-player a:hover {
+.info-player a:hover,
+.volume-bar-action a i:hover {
   color: #1ed760;
 }
 
@@ -307,6 +308,7 @@ body {
 .info-player {
   display: flex;
   align-items: center;
+  flex-basis: 200px;
 }
 
 .info-player .text {
@@ -326,7 +328,7 @@ body {
 
 .player-button {
   text-align: center;
-  flex-basis: 50%;
+  flex-basis: 550px;
   padding: 0 20px;
 }
 
@@ -353,6 +355,10 @@ body {
   margin-left: 10px;
 }
 
+.player-button ul li:nth-child(5) {
+  margin-right: 0;
+}
+
 /* progress-bar */
 .progress-bar {
   margin-top: 10px;
@@ -369,7 +375,7 @@ body {
   background-color: #535353;
   height: 4px;
   flex-grow: 1;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0 10px;
 }
 
@@ -380,16 +386,18 @@ body {
   top: 0;
   height: 100%;
   width: 25%;
-  background-color: #bababa;
+  background: linear-gradient(#438600, #8fd747);
+  border-radius: 20px;
 }
 
-.progress-bar:hover .bar::after {
+.progress-bar:hover .bar::after,
+.volume-bar:hover .bar::after {
   content: '';
   position: absolute;
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background: #1ed760;
+  background: linear-gradient(#438600, #8fd747);
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
   left: 25%;
   top: 50%;
@@ -397,20 +405,22 @@ body {
 }
 
 /* volume-bar */
-.volume-bar {
+.volume-bar-action {
   display: flex;
   flex-basis: 200px;
+}
+.volume-bar {
+  display: flex;
+  flex-grow: 1;
   align-items: center;
 }
 
-.volume-bar a i {
+.volume-bar-action a {
   color: #fff;
-  margin-right: 15px;
+  margin-right: 10px;
 }
   
 /* Reponsive */
-
-
 @media all and (min-width: 601px) {
   .sidebar-top > img:nth-child(2) {
     display: none;
@@ -440,9 +450,28 @@ body {
 
   .icon-info-player {
     flex-direction: column;
+    font-size: 12px;
   }
 
   .sidebar-bottom .border > a i {
     font-size: 25px;
   }
+
+  .volume-bar {
+    width: 100px;
+  }
+
+  .info-player .text {
+    margin-right: 20px;
+  }
+  
+  .volume-bar-action a i,
+  .player-button ul li a {
+    font-size: 12px;
+  }
+
+  .player-button ul li:nth-child(3) a {
+    font-size: 20px;
+  }
+
 }
